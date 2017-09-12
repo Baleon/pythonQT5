@@ -1,0 +1,21 @@
+widgets are basic building blocks of an application, pyqt5 has a wide range of various widgets including buttons
+check boxes, sliders or list boxes, in this section we will describe several useful widgets
+
+import sys
+from PyQt5.QtWidgets import QWidget, QApplication
+
+
+class Example(QWidget):
+    def __init__(self):
+        super(Example, self).__init__()
+        self.initUI()
+
+    def initUI(self):
+
+        self.setWindowTitle('check box')
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    ex.show()
+    sys.exit(app.exec_())
