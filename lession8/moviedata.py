@@ -1,0 +1,4 @@
+
+
+class MovieContainer(object):
+    pass
